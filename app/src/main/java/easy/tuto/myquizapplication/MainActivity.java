@@ -132,12 +132,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ansD.setBackgroundColor(Color.WHITE);
             ansD.setTextColor(Color.BLACK);
 
-            progressBar = findViewById(R.id.progress_bar);
+            //progressBar = findViewById(R.id.progress_bar);
+
+            /*    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+
+        android:layout_marginTop="40dp"
+        android:indeterminate="true"
+        android:padding="20dp" />   */
 
             final int[] i = {0};
 
             final Handler handler = new Handler();
-            handler.postDelayed(new Runnable() {
+            /*handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     // set the limitations for the numeric
@@ -150,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         handler.removeCallbacks(this);
                     }
                 }
-            },200 );
+            },200 );*/
 
             Runnable runnable = new Runnable() {
                 @Override
